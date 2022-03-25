@@ -4,36 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:textSize="30sp"
-            android:id="@+id/txtHistory"
-            android:gravity="center|end"
-            android:background="@color/white"
-            android:textColor="@color/black"/>
 
         <TextView
+            android:id="@+id/txtHistory"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@android:color/holo_blue_bright"
+            android:gravity="center|end"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtResult"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:textSize="60sp"
-            android:id="@+id/txtResult"
+            android:background="@android:color/holo_blue_bright"
             android:gravity="center|end"
-            android:background="@color/white"
+            android:text="0"
             android:textColor="@color/black"
-            android:text="0"/>
+            android:textSize="60sp" />
     </LinearLayout>
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:rowCount="5"
-        android:columnCount="4">
+        android:columnCount="4"
+        android:rowCount="5">
 
         <Button
             android:id="@+id/btnAC"
@@ -42,6 +46,8 @@
             android:layout_row="0"
             android:layout_column="0"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="AC"
             android:textColor="@color/orange"
             android:textSize="30sp" />
@@ -53,8 +59,10 @@
             android:layout_row="0"
             android:layout_column="3"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
             android:background="@color/white"
             android:backgroundTint="@color/white"
+            android:padding="2dp"
             android:text="*"
             android:textColor="#EF6C00"
             android:textSize="30sp" />
@@ -66,6 +74,8 @@
             android:layout_row="0"
             android:layout_column="2"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="/"
             android:textColor="@color/orange"
             android:textSize="30sp" />
@@ -77,10 +87,13 @@
             android:layout_row="0"
             android:layout_column="1"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="DEL"
             android:textColor="@color/orange"
             android:textSize="30sp" />
         ------------------
+
         <Button
             android:id="@+id/btn7"
             android:layout_width="wrap_content"
@@ -88,6 +101,8 @@
             android:layout_row="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="7"
             android:textColor="@color/black"
             android:textSize="30sp" />
@@ -99,8 +114,10 @@
             android:layout_row="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
             android:background="@color/white"
             android:backgroundTint="@color/white"
+            android:padding="2dp"
             android:text="8"
             android:textColor="@color/black"
             android:textSize="30sp" />
@@ -112,6 +129,8 @@
             android:layout_row="1"
             android:layout_column="2"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="9"
             android:textColor="@color/black"
             android:textSize="30sp" />
@@ -123,10 +142,13 @@
             android:layout_row="1"
             android:layout_column="3"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="-"
             android:textColor="@color/orange"
             android:textSize="30sp" />
         ----------
+
         <Button
             android:id="@+id/btn4"
             android:layout_width="wrap_content"
@@ -134,6 +156,8 @@
             android:layout_row="2"
             android:layout_column="0"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="4"
             android:textColor="@color/black"
             android:textSize="30sp" />
@@ -145,8 +169,10 @@
             android:layout_row="2"
             android:layout_column="1"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
             android:background="@color/white"
             android:backgroundTint="@color/white"
+            android:padding="2dp"
             android:text="5"
             android:textColor="@color/black"
             android:textSize="30sp" />
@@ -158,6 +184,8 @@
             android:layout_row="2"
             android:layout_column="2"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="6"
             android:textColor="@color/black"
             android:textSize="30sp" />
@@ -169,10 +197,13 @@
             android:layout_row="2"
             android:layout_column="3"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="+"
             android:textColor="@color/orange"
             android:textSize="30sp" />
         ----------
+
         <Button
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
@@ -180,6 +211,8 @@
             android:layout_row="3"
             android:layout_column="0"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="1"
             android:textColor="@color/black"
             android:textSize="30sp" />
@@ -191,8 +224,10 @@
             android:layout_row="3"
             android:layout_column="1"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
             android:background="@color/white"
             android:backgroundTint="@color/white"
+            android:padding="2dp"
             android:text="2"
             android:textColor="@color/black"
             android:textSize="30sp" />
@@ -204,6 +239,8 @@
             android:layout_row="3"
             android:layout_column="2"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="3"
             android:textColor="@color/black"
             android:textSize="30sp" />
@@ -217,11 +254,14 @@
             android:layout_rowWeight="1"
             android:layout_column="3"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
             android:backgroundTint="@color/orange"
+            android:padding="2dp"
             android:text="="
             android:textColor="@color/white"
             android:textSize="30sp" />
         -------
+
         <Button
             android:id="@+id/btnDot"
             android:layout_width="wrap_content"
@@ -229,6 +269,8 @@
             android:layout_row="4"
             android:layout_column="0"
             android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="."
             android:textColor="@color/black"
             android:textSize="30sp" />
@@ -238,10 +280,11 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_row="4"
-            android:layout_columnSpan="2"
             android:layout_column="1"
+            android:layout_columnSpan="2"
             android:layout_columnWeight="1"
-            android:backgroundTint="@color/white"
+            android:layout_margin="4dp"
+            android:padding="2dp"
             android:text="0"
             android:textColor="@color/black"
             android:textSize="30sp" />
